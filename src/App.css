@@ -130,8 +130,6 @@ h1 {
     padding: 12px;
     min-height: unset;
     height: auto;
-    width: 100vw;
-    position: static;
     box-sizing: border-box;
   }
   .game-button {
