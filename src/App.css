@@ -1,0 +1,135 @@
+/* for the glitch bg */
+.full-bg-center {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: #282c34;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: transparent;
+  min-height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  z-index: 1;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* title jack en poy */
+h1 {
+  font-size: 100px;
+  margin-bottom: 0;
+}
+
+/* Start animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0); 
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Celebration Animation */
+@keyframes winnerGrow {
+   0% {
+    transform: scale(0);
+   }
+   50%{
+    transform: scale(1.25);
+   }
+   100% {
+    transform: scale(2);
+   }
+}
+
+.vs-text {
+  font-size: 24px;
+  margin: 0 20px;
+}
+
+.animated-emoji {
+  font-size: 80px;
+  animation: bounceIn 0.5s ease-out;
+  display: inline-block;
+}
+
+.winner-emoji {
+  font-size: 80px;
+  animation: winnerGrow 1s ease-out;
+  display: inline-block;
+}
+
+.choice-btn{
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+/* Style for game buttons */
+.game-button {
+  padding: 16px 32px;
+  font-size: 1.25rem;
+  border-radius: 24px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  margin: 8px;
+  transition: background 0.2s;
+}
+
+.game-button:hover {
+  background-color: #bbbaba;
+}
+
+.game-result{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
