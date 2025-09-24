@@ -1,5 +1,4 @@
 import React, {use, useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import LetterGlitch from './LetterGlitch';
 
